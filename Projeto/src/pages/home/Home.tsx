@@ -1,37 +1,19 @@
 function Home() {
   return (
     <>
-    <div style={{
-        width:"100vw",
-        display:"flex",
-        justifyContent:"center"
-    }}>
-
-        <div>
-            <div style={{
-                width:"80vw",
-                display:"flex",
-                flexDirection:"column",
-                alignItems:"center"
-            }}>
-                <h2>Seja Bem Vindo!!!</h2>
-                <p>Expresse aqui seus pensamentos e opiniões </p>
+    <div className="bg-indigo-900 flex justify-center">
+        <div className="container grid grid-cols-2 text-white">
+            <div className="flex flex-col gap-4 intems-center justify-center py-4">
+                <h2 className="text-5 font-bold">Sejam Bem Vindos!!!</h2>
+                <p className="text-xl">Explore aqui seus pensamentos e opiniões</p>
+                <div className="flex justify-around gap-4">
+                    <div className="rounded text-white boredr-white border-solid border-2 py2 px-4"></div>
+                </div>
             </div>
-
-            <div style={{
-                width:"80vw",
-                display:"flex",
-                flexDirection:"column",
-                alignItems:"center"
-            }}>
-                <img src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/01-bobcat-dc-nationalgeographic_1435312.webp?w=1600&h=900" alt="Imagem do Lince" width="400px" />
-
+            <div className="flex justify-center">
+                <img src="https://i.imgur.com/fyfri1v.png" alt="Imagem Página" className="w-2/3" />
             </div>
-
-
         </div>
-
-
     </div>
     </>
   )
